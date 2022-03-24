@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="{{ url_for('static', filename='style.css')}}" rel="stylesheet" type="text/css"
+  <title></title>
+</head>
+<body>  
+  <div class="header">
+    <ul class="ul">
+       <li><span class="sp">Fake</span>book</li>
+    </ul>
+    </div> 
+  <div class=nav>
+     <h1 class=intro>Welcome to Fakebook Photo app</h1> 
+   </div>
+    <div class=body>
+      <h3 class="up">Upload new File</h3>
+         <div class="form-group">
+           <form method="post" action="/upload-photos" enctype="multipart/form-data">
+             <div style="display: flex;">
+               <input type="file" accept=".png, .jpeg, .jpg, .gif" name="photos" multiple class="control" style="margin-right: 1em;">
+               <input type="submit" class="sbtn">
+             </div>
+           </form>
+         </div> 
+    </div>
+    <div class="imgcont">  
+      
+      {% for image in image_links %}
+       
+        <img src="{{ image }}" alt="Images" width="auto" height="200" class="img">
+        <a href="/delete/{{image}}" class = "rep">Report</a>
+      
+
+      {% endfor %} 
+
+    </div>
+  </div>
+</body>
+</html>
+

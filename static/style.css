@@ -1,0 +1,117 @@
+
+.control{
+    border: 3px solid rgb(250, 247, 248);
+}
+
+.img{
+    border-radius: 10%;
+    border: 3px solid rgb(212, 136, 136);
+}
+
+
+.imgcont{
+    display: flex;
+    
+}
+
+
+.sp{
+    color:#b88a28;
+    font-weight: 600;
+}
+.up{
+    font-size:28px;
+    font-weight: 300;
+
+}
+.sbtn{
+    border-radius: 10%;
+    background-color: hsla(303, 47%, 55%, 0.466);
+    border: 3px solid rgb(252, 252, 252);
+    text-decoration-line: none;
+    color: whitesmoke;
+    padding: 9px;
+    cursor:pointer;
+       
+}
+.sbtn:hover {
+    background-color: hsla(189, 84%, 45%, 0.87);
+  }
+.rep {
+    cursor:pointer;
+    border: 3px solid pink;
+    border-radius: 13%;
+    background-color: hsla(325, 77%, 57%, 0.432);
+    text-decoration-line: none;
+    color: whitesmoke;
+    margin: 9px;
+    padding: 9px;
+    display:absolute;
+    transform: translate(-89px, 196px);
+    height:15px;
+    width: 50px;
+	
+}
+.rep:hover {
+    background-color: hsla(189, 84%, 45%, 0.87);
+  }
+
+.intro{
+    font-size:38px;
+    font-weight: 900;
+    cursor:pointer;
+    text-shadow: 2px 2px #dd2b3a;
+    color: rgb(168, 52, 91);
+
+}
+.content{
+    display: flex;
+    height:500px;
+    width: 500px;
+    border: 9px solid pink;
+  }
+  .header{
+      
+      position: relative;
+  }
+  .logo{
+    width:48px;
+    height:48px;
+    border-radius: 50%;
+    transform: translate(-41px, 1px)
+  }
+  
+  .ul li{
+      font-size:38px;
+      font-weight: 70;
+      display:inline;
+      padding:3px;
+      
+      color: whitesmoke;
+  }
+  .ul{
+     width:93vw;
+      height: 50px;
+      border: 2px solid red;
+      border-radius: 50px;
+      box-shadow: 0 0 45px 9px red;
+  }
+  
+  body {
+	background: linear-gradient(-45deg, #218d7f, #2dabaf, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
